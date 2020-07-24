@@ -10,14 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #FFFFFF
 
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Starter Project! Never before has it bee easier to get your \
-	project up and running!
+	Welcome to Acme Incubator Project!
 
 # master.menu #################################################################
 
@@ -29,7 +28,9 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
+master.menu.anonymous.linkOscar = Oscar's favourite link
+master.menu.anonymous.linkPablo = Pablo's favourite link
+
 
 # master.menu.administrator ###################################################
 
@@ -59,8 +60,8 @@ master.menu.user-account.become-consumer = Become a consumer
 # master.footer ###############################################################
 
 master.footer.title.about = About us
-master.footer.label.company = Company
-master.footer.label.license = License
+master.footer.label.company = Company of Pablo and Oscar
+master.footer.label.license = License of DP1 Acme Incubator
 master.footer.title.social = Social
 master.footer.label.linked-in = Linked-In
 master.footer.label.twitter = Twitter
@@ -70,19 +71,19 @@ master.footer.label.spanish = Spanish
 
 # master.company ##############################################################
 
-master.company.title = La compañía
+master.company.title = Company of Pablo and Oscar
 master.company.text = \
-	Starter Project, Inc. is a fictitious fictitious company that provides a \
+	Company of Pablo and Oscar is a fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Starter Project, Inc.
-master.company.address = Number Street, City, State, Country
+master.company.name = Pablo and Oscar, Inc.
+master.company.address = Benito, 23, Utrera, Seville, Spain
 master.company.phone = +000 123 456
-master.company.email = contact@acme.com
+master.company.email = oscarpablo@acme.com
 
 # master.license ##############################################################
 
-master.license.title = License
+master.license.title = License of Pablo and Oscar
 master.license.text = \
 	You may use this system free of charge, as long as you carefully observe the \
 	existing applicable laws.  Please, note that we do not share any information \
@@ -90,4 +91,4 @@ master.license.text = \
 	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
-	local storage to keep track of the document to which some buttons must return.
+	local storage to keep track of the document to which some buttons must return. Acme Incubator Oscar Pablo
