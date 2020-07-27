@@ -21,6 +21,9 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.linkOscar" action="http://www.github.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.linkPablo" action="http://www.youtube.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.listShout" action="/anonymous/shout/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.createShout" action="/anonymous/shout/create"/>
+			
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
