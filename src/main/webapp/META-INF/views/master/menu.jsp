@@ -25,6 +25,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.createShout" action="/anonymous/shout/create"/>
 			<acme:menu-suboption code="master.menu.anonymous.listDoradoBulletin" action="/anonymous/dorado-bulletin/list"/>
 			<acme:menu-suboption code="master.menu.anonymous.createDoradoBulletin" action="/anonymous/dorado-bulletin/create"/>
+			<acme:menu-suboption code="master.menu.anonymous.listCalleBulletin" action="/anonymous/calle-bulletin/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.createCalleBulletin" action="/anonymous/calle-bulletin/create"/>
 			
 		</acme:menu-option>
 
