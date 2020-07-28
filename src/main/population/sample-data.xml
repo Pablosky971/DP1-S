@@ -53,6 +53,44 @@
 	<property name="web" value="https://www.gmail.com"/>
 	
 	</bean>
+	
+	<!-- CalleBulletin -->
+	
+	<bean id="calleBulletin01" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Uno contra 20 Mc´s"/>
+	<property name="artist" value="Toteking"/>
+	<property name="album" value="Música para Enfermos"/>
+	<property name="moment" value="2004/07/24 17:43"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin02" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="1000 guerras"/>
+	<property name="artist" value="Ayax y Prok"/>
+	<property name="album" value="Single"/>
+	<property name="moment" value="2020/07/16 15:00"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin03" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Y la felicidad qué"/>
+	<property name="artist" value="Canserbero"/>
+	<property name="album" value="Vida"/>
+	<property name="moment" value="2010/07/08 12:34"/>
+	
+	</bean>
+	
+	<bean id="calleBulletin04" class="acme.entities.calleBulletin.CalleBulletin">
+	
+	<property name="title" value="Anochece/Manifiesto"/>
+	<property name="artist" value="Nach"/>
+	<property name="album" value="Un día en suburbia"/>
+	<property name="moment" value="2008/02/13 03:34"/>
+	
+	</bean>
 
 	
 
