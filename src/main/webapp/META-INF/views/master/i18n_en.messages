@@ -32,8 +32,8 @@ master.menu.anonymous.linkOscar = Oscar's favourite link
 master.menu.anonymous.linkPablo = Pablo's favourite link
 master.menu.anonymous.listShout = List Shout
 master.menu.anonymous.createShout = Create Shout
-
-
+master.menu.anonymous.listDoradoBulletin = List Dorado Bulletin
+master.menu.anonymous.createDoradoBulletin = Create Dorado Bulletin
 
 
 # master.menu.administrator ###################################################

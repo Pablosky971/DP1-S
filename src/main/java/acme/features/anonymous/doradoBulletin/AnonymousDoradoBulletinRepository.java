@@ -10,20 +10,21 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.anonymous.shout;
+package acme.features.anonymous.doradoBulletin;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.doradoBulletin.DoradoBulletin;
 import acme.entities.shout.Shout;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnonymousShoutRepository extends AbstractRepository {
+public interface AnonymousDoradoBulletinRepository extends AbstractRepository {
 
-	@Query("select s from Shout s")
-	Collection<Shout> findMany();
+	@Query("select b from DoradoBulletin b")
+	Collection<DoradoBulletin> findMany();
 
 }

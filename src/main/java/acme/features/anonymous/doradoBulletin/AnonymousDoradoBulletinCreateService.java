@@ -10,13 +10,14 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.anonymous.shout;
+package acme.features.anonymous.doradoBulletin;
 
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.doradoBulletin.DoradoBulletin;
 import acme.entities.shout.Shout;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -25,23 +26,23 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AnonymousShoutCreateService implements AbstractCreateService<Anonymous, Shout> {
+public class AnonymousDoradoBulletinCreateService implements AbstractCreateService<Anonymous, DoradoBulletin> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	AnonymousShoutRepository repository;
+	AnonymousDoradoBulletinRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Shout> request) {
+	public boolean authorise(final Request<DoradoBulletin> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Shout> request, final Shout entity, final Errors errors) {
+	public void bind(final Request<DoradoBulletin> request, final DoradoBulletin entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -50,38 +51,32 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	}
 
 	@Override
-	public void unbind(final Request<Shout> request, final Shout entity, final Model model) {
+	public void unbind(final Request<DoradoBulletin> request, final DoradoBulletin entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text");
+		request.unbind(entity, model, "sender", "receiver","web");
 
 		
 	}
 
 	@Override
-	public Shout instantiate(final Request<Shout> request) {
+	public DoradoBulletin instantiate(final Request<DoradoBulletin> request) {
 		assert request != null;
 
-		Shout result;
-		Date moment;
+		DoradoBulletin result;
 		
-		moment = new Date(System.currentTimeMillis() - 1);
+		result = new DoradoBulletin();
+		result.setSender("Oscar");
+		result.setReceiver("Pablo");
+		result.setWeb("http://www.gmail.com");
 		
-
-		result = new Shout();
-		result.setAuthor("Stephen King");
-		result.setText("Carrie");
-		result.setMoment(moment);
-		
-		
-
 		return result;
 	}
 
 	@Override
-	public void validate(final Request<Shout> request, final Shout entity, final Errors errors) {
+	public void validate(final Request<DoradoBulletin> request, final DoradoBulletin entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -91,14 +86,10 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 
 	@Override
-	public void create(final Request<Shout> request, final Shout entity) {
+	public void create(final Request<DoradoBulletin> request, final DoradoBulletin entity) {
 		assert request != null;
 		assert entity != null;
 
-		Date moment;
-		
-		moment = new Date(System.currentTimeMillis() - 1);
-		entity.setMoment(moment);
 		this.repository.save(entity);
 		
 	}
