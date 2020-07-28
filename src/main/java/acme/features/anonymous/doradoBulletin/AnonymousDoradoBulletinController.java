@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.anonymous.shout;
+package acme.features.anonymous.doradoBulletin;
 
 import javax.annotation.PostConstruct;
 
@@ -18,22 +18,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.entities.doradoBulletin.DoradoBulletin;
 import acme.entities.shout.Shout;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/shout/")
-public class AnonymousShoutController extends AbstractController<Anonymous, Shout> {
+@RequestMapping("/anonymous/dorado-bulletin/")
+public class AnonymousDoradoBulletinController extends AbstractController<Anonymous, DoradoBulletin> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousShoutListService listService;
+	private AnonymousDoradoBulletinListService listService;
 	
 	@Autowired
-	private AnonymousShoutCreateService createService;
+	private AnonymousDoradoBulletinCreateService createService;
 
 
 	// Constructors -----------------------------------------------------------

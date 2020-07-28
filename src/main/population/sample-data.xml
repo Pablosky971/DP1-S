@@ -44,6 +44,15 @@
 	
 	</bean>
 	
+	<!-- DoradoBulletin -->
+	
+	<bean id="doradoBulletin1" class="acme.entities.doradoBulletin.DoradoBulletin">
+	
+	<property name="sender" value="Oscar"/>
+	<property name="receiver" value="Pablo"/>
+	<property name="web" value="https://www.gmail.com"/>
+	
+	</bean>
 
 	
 
